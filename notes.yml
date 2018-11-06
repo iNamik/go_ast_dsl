@@ -1,0 +1,17 @@
+Label:
+  string
+
+BreakStmt:
+  Label
+
+ConstDecl:
+  name:  string
+  typ:   TypeExprProvider
+  value: ExprProvider
+  iota:  int
+  
+Function:
+  name: string
+  params: FieldListProvider
+  results: FieldListProvider
+  body: BlockStmt
